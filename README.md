@@ -25,9 +25,9 @@ Assets/
 ├─ _Project/
 │ ├─ Scenes/ # 팀별 담당 씬
 │ │ ├─ scn_Boot.unity # 부트스트랩 씬 (Additive 로딩)
-│ │ ├─ scn_Menu.unity # 메뉴/UI 팀
-│ │ ├─ scn_Environment.unity # 환경/장비 팀
-│ │ ├─ scn_Welding.unity # 용접 로직/이펙트 팀
+│ │ ├─ scn_Menu.unity # 메뉴/UI
+│ │ ├─ scn_Environment.unity # 환경/장비
+│ │ ├─ scn_Welding.unity # 용접 로직/이펙트
 │ │ └─ scn_UI.unity # 공통 오버레이 UI
 │ ├─ Scripts/
 │ │ ├─ Runtime/ # 런타임 스크립트
