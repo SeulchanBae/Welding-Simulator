@@ -23,7 +23,7 @@ Unity 기반 **Meta Quest 3 MR 용접 시뮬레이터**
 ```
 Assets/
 ├─ _Project/
-│ ├─ Scenes/ # 팀별 담당 씬
+│ ├─ Scenes/ # 개인별 담당 씬
 │ │ ├─ scn_Boot.unity # 부트스트랩 씬 (Additive 로딩)
 │ │ ├─ scn_Menu.unity # 메뉴/UI
 │ │ ├─ scn_Environment.unity # 환경/장비
