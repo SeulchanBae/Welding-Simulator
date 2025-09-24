@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     private int proficiencyScore = 100;
     
     private int sparkCount = 0;
-    private int totalSparkCount = 25;
+    private int totalSparkCount = 66;
     private bool isGameFinished = false;
 
     private float startTime;
