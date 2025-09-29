@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 28f13c7f6a564934ea6c585a1593d132
+timeCreated: 1587283853
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Earth_1
+    100002: Earth_2
+    100004: Holder
+    100006: Welder_Body
+    100008: //RootNode
+    100010: Welder_SW_1
+    100012: Welder_SW_2
+    100014: Welding_1
+    100016: Welding_Mask
+    100018: Weldings_Box
+    400000: Earth_1
+    400002: Earth_2
+    400004: Holder
+    400006: Welder_Body
+    400008: //RootNode
+    400010: Welder_SW_1
+    400012: Welder_SW_2
+    400014: Welding_1
+    400016: Welding_Mask
+    400018: Weldings_Box
+    2300000: Earth_1
+    2300002: Earth_2
+    2300004: Holder
+    2300006: Welder_Body
+    2300008: Welder_SW_1
+    2300010: Welder_SW_2
+    2300012: Welding_1
+    2300014: Welding_Mask
+    2300016: Weldings_Box
+    3300000: Earth_1
+    3300002: Earth_2
+    3300004: Holder
+    3300006: Welder_Body
+    3300008: Welder_SW_1
+    3300010: Welder_SW_2
+    3300012: Welding_1
+    3300014: Welding_Mask
+    3300016: Weldings_Box
+    4300000: Welder_SW_1
+    4300002: Welder_Body
+    4300004: Welder_SW_2
+    4300006: Holder
+    4300008: Welding_1
+    4300010: Weldings_Box
+    4300012: Welding_Mask
+    4300014: Earth_2
+    4300016: Earth_1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
