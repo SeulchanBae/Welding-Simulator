@@ -715,16 +715,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7219301001255474380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13f872716f35f2041a3f653e33b6aacc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Script: {fileID: 11500000, guid: b1e465dd23711d54ebd39c5713d6db7a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
   scoreScreenCanvas: {fileID: 7219301001255474380}
-  scoreText: {fileID: 2287864230836809746}
+  accuracyText: {fileID: 0}
+  proficiencyText: {fileID: 0}
+  depthText: {fileID: 0}
+  qualityText: {fileID: 0}
   retryButton: {fileID: 6557100281056588780}
   exitButton: {fileID: 139043876891590212}
   vrUserCamera: {fileID: 0}
-  distanceFromUser: 3
-  verticalOffset: 2
   canvasLocalOffset: {x: 0, y: -0.2, z: 1.2}
 --- !u!1 &8872073093002795023
 GameObject:

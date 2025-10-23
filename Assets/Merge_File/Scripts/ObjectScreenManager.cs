@@ -84,11 +84,25 @@ public class ObjectScreenManager : MonoBehaviour
 
     public void OnStartClick()
     {
-        Debug.Log("[UIManager] START ��ư Ŭ��! ���� ������ �����ϰ� UI�� ����ϴ�.");
+        Debug.Log("[UIManager] START 버튼 클릭! 용접 장비를 소환하고 UI를 숨깁니다.");
+
+        // 프리팹이 선택되었는지 확인
+        if (currentWeldingObject == null)
+        {
+            Debug.LogWarning("[UIManager] 프리팹을 먼저 선택해주세요!");
+            return;
+        }
+
+        // Start 버튼을 눌렀을 때 게임 시작: 큐브 카운트 및 타이머 시작
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.InitializeWeldingGuides();
+            Debug.Log("[UIManager] ★★★ START! 게임 시작 - 큐브 카운트 완료 ★★★");
+        }
 
         if (welderPrefab != null)
         {
-            // ������ ���� ��ġ = ������ + ������ ���� ������
+            // 용접기 소환 위치 = 스폰포인트 + 용접기 전용 오프셋
             Vector3 welderPosition = spawnPoint.position + welderSpawnOffset;
             Instantiate(welderPrefab, welderPosition, spawnPoint.rotation);
         }
@@ -128,11 +142,6 @@ public class ObjectScreenManager : MonoBehaviour
 
         currentWeldingObject.name = prefabToSpawn.name;
 
-        // 프리팹 소환 후 GameManager에게 가이드 개수를 다시 세도록 알림
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.InitializeWeldingGuides();
-            Debug.Log("[UIManager] 프리팹 소환 완료 후 GameManager에 가이드 초기화 요청");
-        }
+        Debug.Log($"[UIManager] '{prefabToSpawn.name}' 프리팹 소환 완료! START 버튼을 눌러 게임을 시작하세요.");
     }
 }

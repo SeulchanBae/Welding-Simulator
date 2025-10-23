@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class WeldingMaskController : MonoBehaviour
 {
-    //  Inspector¿¡¼­ ¿¬°áÇÒ ÇÊ¿ä°¡ ¾øÀ¸¹Ç·Î privateÀ¸·Î º¯°æ
     private Transform cameraTransform;
 
-    [Header("¸¶½ºÅ© ¼³Á¤")]
-    [Tooltip("Ä«¸Ş¶ó ¾Õ¿¡ ¸¶½ºÅ©°¡ °íÁ¤µÉ À§Ä¡ ¿ÀÇÁ¼ÂÀÔ´Ï´Ù.")]
+    [Header("ë§ˆìŠ¤í¬ ì„¤ì •")]
+    [Tooltip("ì¹´ë©”ë¼ ì•ì— ë§ˆìŠ¤í¬ë¥¼ ë°°ì¹˜í•  ìœ„ì¹˜ ì˜¤í”„ì…‹ì…ë‹ˆë‹¤.")]
     public Vector3 maskOffset = new Vector3(0, 0, 0.3f);
 
-    [Tooltip("¸¶½ºÅ©¸¦ ÇØÁ¦ÇÒ ¶§ »ç¿ëÇÒ ÄÁÆ®·Ñ·¯ ¹öÆ°ÀÔ´Ï´Ù.")]
+    [Tooltip("ë§ˆìŠ¤í¬ë¥¼ ë–¼ì–´ë‚¼ ë•Œ ì‚¬ìš©í•  ì»¨íŠ¸ë¡¤ëŸ¬ ë²„íŠ¼ì…ë‹ˆë‹¤.")]
     public OVRInput.Button detachButton = OVRInput.Button.One;
+
+    private GameObject sparkBlocker; // ìŠ¤íŒŒí¬ ì°¨ë‹¨ìš© ì˜¤ë¸Œì íŠ¸
 
     private bool isAttached = false;
     private Transform originalParent;
@@ -18,28 +19,52 @@ public class WeldingMaskController : MonoBehaviour
     private Quaternion originalRotation;
     private Vector3 originalScale;
 
-    //  °ÔÀÓÀÌ ½ÃÀÛµÉ ¶§ ´Ü ÇÑ¹ø, ½º½º·Î Ä«¸Ş¶ó¸¦ Ã£±â À§ÇØ Awake ÇÔ¼ö Ãß°¡
     void Awake()
     {
-        // "PlayerHead"¶ó´Â ÅÂ±×¸¦ °¡Áø °ÔÀÓ ¿ÀºêÁ§Æ®¸¦ ¾À¿¡¼­ Ã£½À´Ï´Ù.
         GameObject playerHead = GameObject.FindGameObjectWithTag("PlayerHead");
 
-        // ¸¸¾à ¼º°øÀûÀ¸·Î Ã£¾Ò´Ù¸é
         if (playerHead != null)
         {
-            // Ã£Àº ¿ÀºêÁ§Æ®ÀÇ Transform Á¤º¸¸¦ cameraTransform º¯¼ö¿¡ ÇÒ´çÇÕ´Ï´Ù.
             cameraTransform = playerHead.transform;
         }
         else
         {
-            // ¸¸¾à ¸øÃ£¾Ò´Ù¸é, ¿¡·¯ ¸Ş½ÃÁö¸¦ ÄÜ¼Ö¿¡ Ãâ·ÂÇØ¼­ ¹®Á¦ ÇØ°áÀ» µ½½À´Ï´Ù.
-            Debug.LogError("¿À·ù: ¾À¿¡ 'PlayerHead' ÅÂ±×¸¦ °¡Áø ¿ÀºêÁ§Æ®°¡ ¾ø½À´Ï´Ù. CenterEyeAnchor¿¡ ÅÂ±×¸¦ ¼³Á¤Çß´ÂÁö È®ÀÎÇØÁÖ¼¼¿ä.");
+            Debug.LogError("ê²½ê³ : ì”¬ì— 'PlayerHead' íƒœê·¸ë¥¼ ê°€ì§„ ì˜¤ë¸Œì íŠ¸ê°€ ì—†ìŠµë‹ˆë‹¤.");
+        }
+
+        // ë§ˆìŠ¤í¬ì— Collider ì¶”ê°€ (ìŠ¤íŒŒí¬ íŒŒí‹°í´ì´ ì¶©ëŒí•˜ë„ë¡)
+        EnsureMaskHasCollider();
+    }
+
+    void EnsureMaskHasCollider()
+    {
+        // ë§ˆìŠ¤í¬ì— MeshColliderë‚˜ BoxColliderê°€ ì—†ìœ¼ë©´ ìë™ìœ¼ë¡œ ì¶”ê°€
+        Collider existingCollider = GetComponent<Collider>();
+        if (existingCollider == null)
+        {
+            // MeshFilterê°€ ìˆìœ¼ë©´ MeshCollider ì¶”ê°€
+            MeshFilter meshFilter = GetComponent<MeshFilter>();
+            if (meshFilter != null)
+            {
+                MeshCollider meshCollider = gameObject.AddComponent<MeshCollider>();
+                meshCollider.convex = false;
+                Debug.Log("ë§ˆìŠ¤í¬ì— MeshColliderë¥¼ ì¶”ê°€í–ˆìŠµë‹ˆë‹¤ (ìŠ¤íŒŒí¬ ì°¨ë‹¨ìš©)");
+            }
+            else
+            {
+                // MeshFilterê°€ ì—†ìœ¼ë©´ BoxCollider ì¶”ê°€
+                BoxCollider boxCollider = gameObject.AddComponent<BoxCollider>();
+                Debug.Log("ë§ˆìŠ¤í¬ì— BoxColliderë¥¼ ì¶”ê°€í–ˆìŠµë‹ˆë‹¤ (ìŠ¤íŒŒí¬ ì°¨ë‹¨ìš©)");
+            }
+        }
+        else
+        {
+            Debug.Log("ë§ˆìŠ¤í¬ì— ì´ë¯¸ Colliderê°€ ìˆìŠµë‹ˆë‹¤.");
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        //  cameraTransformÀÌ ÇÒ´çµÇÁö ¾Ê¾Ò´Ù¸é ÇÔ¼ö¸¦ ½ÇÇàÇÏÁö ¾Êµµ·Ï ¹æ¾î ÄÚµå Ãß°¡
         if (cameraTransform == null) return;
 
         if (!isAttached && other.CompareTag("PlayerHead"))
@@ -47,8 +72,6 @@ public class WeldingMaskController : MonoBehaviour
             AttachMask();
         }
     }
-
-    // (Update, AttachMask, DetachMask ÇÔ¼ö´Â ÀÌÀü°ú µ¿ÀÏ)
 
     void Update()
     {
@@ -71,6 +94,41 @@ public class WeldingMaskController : MonoBehaviour
         transform.localPosition = maskOffset;
         transform.localRotation = Quaternion.identity;
         transform.localScale = Vector3.one;
+
+        // ìŠ¤íŒŒí¬ ì°¨ë‹¨ìš© íˆ¬ëª… ë²½ ìƒì„± (ì¹´ë©”ë¼ ë°”ë¡œ ì•)
+        CreateSparkBlocker();
+    }
+
+    void CreateSparkBlocker()
+    {
+        if (sparkBlocker == null && cameraTransform != null)
+        {
+            // ì¹´ë©”ë¼ ì•ì— íˆ¬ëª…í•œ ì¿¼ë“œ ìƒì„± (ìŠ¤íŒŒí¬ ì°¨ë‹¨ìš©)
+            sparkBlocker = GameObject.CreatePrimitive(PrimitiveType.Quad);
+            sparkBlocker.name = "SparkBlocker";
+            sparkBlocker.transform.SetParent(cameraTransform);
+            sparkBlocker.transform.localPosition = new Vector3(0, 0, 0.05f); // ì¹´ë©”ë¼ ë°”ë¡œ ì•
+            sparkBlocker.transform.localRotation = Quaternion.identity;
+            sparkBlocker.transform.localScale = new Vector3(2f, 2f, 1f); // ì¶©ë¶„íˆ í° í¬ê¸°
+
+            // ì™„ì „ íˆ¬ëª…í•œ Material ì ìš© (ë³´ì´ì§€ëŠ” ì•Šì§€ë§Œ íŒŒí‹°í´ì€ ë§‰ìŒ)
+            Renderer renderer = sparkBlocker.GetComponent<Renderer>();
+            if (renderer != null)
+            {
+                Material transparentMat = new Material(Shader.Find("Unlit/Transparent"));
+                transparentMat.color = new Color(0, 0, 0, 0); // ì™„ì „ íˆ¬ëª…
+                renderer.material = transparentMat;
+            }
+
+            // ColliderëŠ” ì œê±° (ë¬¼ë¦¬ ì¶©ëŒì€ í•„ìš” ì—†ìŒ)
+            Collider blockerCollider = sparkBlocker.GetComponent<Collider>();
+            if (blockerCollider != null)
+            {
+                Destroy(blockerCollider);
+            }
+
+            Debug.Log("ìŠ¤íŒŒí¬ ì°¨ë‹¨ ë²½ ìƒì„± ì™„ë£Œ");
+        }
     }
 
     void DetachMask()
@@ -81,5 +139,13 @@ public class WeldingMaskController : MonoBehaviour
         transform.position = originalPosition;
         transform.rotation = originalRotation;
         transform.localScale = originalScale;
+
+        // ìŠ¤íŒŒí¬ ì°¨ë‹¨ ë²½ ì œê±°
+        if (sparkBlocker != null)
+        {
+            Destroy(sparkBlocker);
+            sparkBlocker = null;
+            Debug.Log("ìŠ¤íŒŒí¬ ì°¨ë‹¨ ë²½ ì œê±° ì™„ë£Œ");
+        }
     }
 }
