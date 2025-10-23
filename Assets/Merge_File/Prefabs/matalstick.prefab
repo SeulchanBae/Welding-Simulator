@@ -147,6 +147,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &169929599472483245
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +297,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &195494769282600911
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,6 +447,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &221987873958383789
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +597,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &273503922717879332
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +747,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &281211357952837010
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +897,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &405460396238038176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,6 +1047,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &958802758469908140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1197,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1032995330610467637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,6 +1347,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1110272020458548849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,6 +1497,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1208693909246254462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,6 +1903,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1394917105899725192
 GameObject:
   m_ObjectHideFlags: 0
@@ -2020,6 +2053,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1400910201594644217
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,6 +2203,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1439880144151881339
 GameObject:
   m_ObjectHideFlags: 0
@@ -2346,6 +2385,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1613838859990580436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,6 +2535,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1678535192969796369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,6 +2685,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1726592587513113324
 GameObject:
   m_ObjectHideFlags: 0
@@ -2787,6 +2835,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1787936932770569648
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,6 +2985,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1842160873210598137
 GameObject:
   m_ObjectHideFlags: 0
@@ -3081,6 +3135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1844511679553669889
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,6 +3285,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1910616368786199001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3375,6 +3435,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1933662749909153324
 GameObject:
   m_ObjectHideFlags: 0
@@ -3522,6 +3585,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &1941997967886372488
 GameObject:
   m_ObjectHideFlags: 0
@@ -3669,6 +3735,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &2154220510005351150
 GameObject:
   m_ObjectHideFlags: 0
@@ -3816,6 +3885,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &2227444686449481484
 GameObject:
   m_ObjectHideFlags: 0
@@ -3963,6 +4035,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &2335791716271202815
 GameObject:
   m_ObjectHideFlags: 0
@@ -4110,6 +4185,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &2437465652891954323
 GameObject:
   m_ObjectHideFlags: 0
@@ -4375,6 +4453,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &2604284406127517323
 GameObject:
   m_ObjectHideFlags: 0
@@ -4522,6 +4603,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &2910647493128919842
 GameObject:
   m_ObjectHideFlags: 0
@@ -4669,6 +4753,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &2987747327512881062
 GameObject:
   m_ObjectHideFlags: 0
@@ -4816,6 +4903,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &2995098651031331007
 GameObject:
   m_ObjectHideFlags: 0
@@ -4963,6 +5053,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3006929128119066902
 GameObject:
   m_ObjectHideFlags: 0
@@ -5110,6 +5203,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3051233117619864559
 GameObject:
   m_ObjectHideFlags: 0
@@ -5257,6 +5353,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3133465286917850082
 GameObject:
   m_ObjectHideFlags: 0
@@ -5404,6 +5503,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3161308287188424386
 GameObject:
   m_ObjectHideFlags: 0
@@ -5551,6 +5653,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3228146043560740089
 GameObject:
   m_ObjectHideFlags: 0
@@ -5698,6 +5803,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3252661578907274584
 GameObject:
   m_ObjectHideFlags: 0
@@ -5845,6 +5953,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3261519271347880279
 GameObject:
   m_ObjectHideFlags: 0
@@ -5992,6 +6103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3344924267871817551
 GameObject:
   m_ObjectHideFlags: 0
@@ -6139,6 +6253,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3356352874760922189
 GameObject:
   m_ObjectHideFlags: 0
@@ -6286,6 +6403,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3550172555947918360
 GameObject:
   m_ObjectHideFlags: 0
@@ -6433,6 +6553,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3560289056035565677
 GameObject:
   m_ObjectHideFlags: 0
@@ -6580,6 +6703,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3677752355307100103
 GameObject:
   m_ObjectHideFlags: 0
@@ -6727,6 +6853,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3689536744554165831
 GameObject:
   m_ObjectHideFlags: 0
@@ -6874,6 +7003,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3802663943124249890
 GameObject:
   m_ObjectHideFlags: 0
@@ -7021,6 +7153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3844235657443683699
 GameObject:
   m_ObjectHideFlags: 0
@@ -7168,6 +7303,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &3997768630444944243
 GameObject:
   m_ObjectHideFlags: 0
@@ -7315,6 +7453,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4011592353503880647
 GameObject:
   m_ObjectHideFlags: 0
@@ -7462,6 +7603,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4086178180613970618
 GameObject:
   m_ObjectHideFlags: 0
@@ -7609,6 +7753,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4112001772811488588
 GameObject:
   m_ObjectHideFlags: 0
@@ -7756,6 +7903,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4114488771581204475
 GameObject:
   m_ObjectHideFlags: 0
@@ -7903,6 +8053,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4165983558432419437
 GameObject:
   m_ObjectHideFlags: 0
@@ -8050,6 +8203,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4242104349122554771
 GameObject:
   m_ObjectHideFlags: 0
@@ -8197,6 +8353,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4279909336340002407
 GameObject:
   m_ObjectHideFlags: 0
@@ -8344,6 +8503,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4389861871380518260
 GameObject:
   m_ObjectHideFlags: 0
@@ -8491,6 +8653,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4549553065396801895
 GameObject:
   m_ObjectHideFlags: 0
@@ -8638,6 +8803,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4553276777256815185
 GameObject:
   m_ObjectHideFlags: 0
@@ -8785,6 +8953,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4599773974064177396
 GameObject:
   m_ObjectHideFlags: 0
@@ -8932,6 +9103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4612648836377372426
 GameObject:
   m_ObjectHideFlags: 0
@@ -9079,6 +9253,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &4917564194555279498
 GameObject:
   m_ObjectHideFlags: 0
@@ -9226,6 +9403,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &5003957713158756564
 GameObject:
   m_ObjectHideFlags: 0
@@ -9373,6 +9553,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &5009931923527929612
 GameObject:
   m_ObjectHideFlags: 0
@@ -9520,6 +9703,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &5102165454733142358
 GameObject:
   m_ObjectHideFlags: 0
@@ -9667,6 +9853,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &5177983340675791993
 GameObject:
   m_ObjectHideFlags: 0
@@ -9814,6 +10003,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &5255362984398585358
 GameObject:
   m_ObjectHideFlags: 0
@@ -9961,6 +10153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &5329183814107613262
 GameObject:
   m_ObjectHideFlags: 0
@@ -10108,6 +10303,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &5456449447121942869
 GameObject:
   m_ObjectHideFlags: 0
@@ -10255,6 +10453,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &5521083502005181798
 GameObject:
   m_ObjectHideFlags: 0
@@ -10402,6 +10603,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &5657127866346176681
 GameObject:
   m_ObjectHideFlags: 0
@@ -10417,7 +10621,7 @@ GameObject:
   - component: {fileID: 8423108216587297452}
   m_Layer: 0
   m_Name: backboard
-  m_TagString: Untagged
+  m_TagString: Backboard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10682,6 +10886,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &6057717661680843582
 GameObject:
   m_ObjectHideFlags: 0
@@ -10829,6 +11036,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &6081490272464289028
 GameObject:
   m_ObjectHideFlags: 0
@@ -10976,6 +11186,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &6176385632488436785
 GameObject:
   m_ObjectHideFlags: 0
@@ -11123,6 +11336,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &6323905403305700042
 GameObject:
   m_ObjectHideFlags: 0
@@ -11270,6 +11486,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &6359686027429539335
 GameObject:
   m_ObjectHideFlags: 0
@@ -11417,6 +11636,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &6376710770140636336
 GameObject:
   m_ObjectHideFlags: 0
@@ -11564,6 +11786,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &6413085996370237181
 GameObject:
   m_ObjectHideFlags: 0
@@ -11711,6 +11936,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &6557648362906244576
 GameObject:
   m_ObjectHideFlags: 0
@@ -11858,6 +12086,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &6728383092998992564
 GameObject:
   m_ObjectHideFlags: 0
@@ -12005,6 +12236,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &6838226538332991391
 GameObject:
   m_ObjectHideFlags: 0
@@ -12152,6 +12386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &7087704636811043652
 GameObject:
   m_ObjectHideFlags: 0
@@ -12299,6 +12536,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &7182949436594846726
 GameObject:
   m_ObjectHideFlags: 0
@@ -12446,6 +12686,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &7377195224184844791
 GameObject:
   m_ObjectHideFlags: 0
@@ -12593,6 +12836,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &7430689311676240603
 GameObject:
   m_ObjectHideFlags: 0
@@ -12740,6 +12986,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &7436959364773701966
 GameObject:
   m_ObjectHideFlags: 0
@@ -12887,6 +13136,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &7460611642288046906
 GameObject:
   m_ObjectHideFlags: 0
@@ -13034,6 +13286,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &7552672830253557615
 GameObject:
   m_ObjectHideFlags: 0
@@ -13181,6 +13436,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &7887521031725563521
 GameObject:
   m_ObjectHideFlags: 0
@@ -13328,6 +13586,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &7991558669398972012
 GameObject:
   m_ObjectHideFlags: 0
@@ -13475,6 +13736,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &8033432929488891914
 GameObject:
   m_ObjectHideFlags: 0
@@ -13622,6 +13886,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &8084953111342768219
 GameObject:
   m_ObjectHideFlags: 0
@@ -13769,6 +14036,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &8204230657693962907
 GameObject:
   m_ObjectHideFlags: 0
@@ -13916,6 +14186,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &8550009648942483942
 GameObject:
   m_ObjectHideFlags: 0
@@ -14063,6 +14336,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &8621628097907455245
 GameObject:
   m_ObjectHideFlags: 0
@@ -14210,6 +14486,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &8642489193439750010
 GameObject:
   m_ObjectHideFlags: 0
@@ -14357,6 +14636,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &8662422612307488322
 GameObject:
   m_ObjectHideFlags: 0
@@ -14504,6 +14786,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &8912051398342536101
 GameObject:
   m_ObjectHideFlags: 0
@@ -14651,6 +14936,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &9218251802434690692
 GameObject:
   m_ObjectHideFlags: 0
@@ -14798,6 +15086,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1
 --- !u!1 &9221827364871835228
 GameObject:
   m_ObjectHideFlags: 0
@@ -14945,3 +15236,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenMaterial: {fileID: 2100000, guid: 6fabd00f2903f774398bd76444e36a99, type: 2}
+  yellowMaterial: {fileID: 2100000, guid: f937696e58281ce41803f598f9a5c2df, type: 2}
+  minWeldingTime: 0.3
+  maxWeldingTime: 1

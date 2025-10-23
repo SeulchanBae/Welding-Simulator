@@ -13,8 +13,8 @@ public class GameManager : MonoBehaviour
     private int depthScore = 100;
     private int qualityScore = 100;
 
-    private int sparkCount = 0;
-    private int totalSparkCount = 66;
+    private int weldedGuideCount = 0;
+    private int totalGuideCount = 0;
     private bool isGameFinished = false;
 
     private float startTime;
@@ -40,6 +40,17 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
         startTime = Time.time;
+        InitializeWeldingGuides();
+    }
+
+    private void InitializeWeldingGuides()
+    {
+        // 씬에 있는 모든 WeldingGuideColorChanger 오브젝트를 찾아서 개수를 셉니다
+        WeldingGuideColorChanger[] guides = FindObjectsOfType<WeldingGuideColorChanger>();
+        totalGuideCount = guides.Length;
+        weldedGuideCount = 0;
+
+        Debug.Log($"용접 가이드 초기화 완료: 총 {totalGuideCount}개의 가이드 발견");
     }
 
     void OnDestroy()
@@ -49,7 +60,13 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "scn_result")
+        if (scene.name == "welding_scene")
+        {
+            // 용접 씬이 로드되면 가이드를 다시 초기화합니다
+            startTime = Time.time;
+            InitializeWeldingGuides();
+        }
+        else if (scene.name == "result_scene")
         {
             // 직접 함수를 호출하는 대신 코루틴을 시작합니다.
             StartCoroutine(SetupResultScene());
@@ -75,18 +92,18 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("scn_result 씬에서 ScoreScreenManager를 찾을 수 없습니다!");
+            Debug.LogError("result_scene 씬에서 ScoreScreenManager를 찾을 수 없습니다!");
         }
     }
 
-    public void OnSparkFired()
+    public void OnGuideWelded()
     {
         if (isGameFinished) return;
 
-        sparkCount++;
-        Debug.Log($"스파크 발생: {sparkCount} / {totalSparkCount}");
+        weldedGuideCount++;
+        Debug.Log($"용접 완료: {weldedGuideCount} / {totalGuideCount}");
 
-        if (sparkCount >= totalSparkCount)
+        if (weldedGuideCount >= totalGuideCount)
         {
             EndWeldingSession();
         }
@@ -100,6 +117,28 @@ public class GameManager : MonoBehaviour
         if (accuracyScore < 0)
         {
             accuracyScore = 0;
+        }
+    }
+
+    public void OnBackboardContact()
+    {
+        if (isGameFinished) return;
+        depthScore -= 5;
+        Debug.Log($"깊이 점수 감점! 현재 점수: {depthScore}");
+        if (depthScore < 0)
+        {
+            depthScore = 0;
+        }
+    }
+
+    public void OnPoorQuality()
+    {
+        if (isGameFinished) return;
+        qualityScore -= 5;
+        Debug.Log($"품질 점수 감점! 현재 점수: {qualityScore}");
+        if (qualityScore < 0)
+        {
+            qualityScore = 0;
         }
     }
 
@@ -121,8 +160,10 @@ public class GameManager : MonoBehaviour
         Debug.Log($"용접 완료! 경과 시간: {elapsedTime:F2}초");
         Debug.Log($"최종 정확도 점수: {accuracyScore}");
         Debug.Log($"최종 숙련도 점수: {proficiencyScore}");
+        Debug.Log($"최종 깊이 점수: {depthScore}");
+        Debug.Log($"최종 품질 점수: {qualityScore}");
 
-        SceneManager.LoadScene("scn_result");
+        SceneManager.LoadScene("result_scene");
     }
 
 }

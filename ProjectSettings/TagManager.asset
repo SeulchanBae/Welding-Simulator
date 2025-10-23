@@ -34,6 +34,7 @@ TagManager:
   - WeldingGuide
   - MetalPlate
   - PlayerHead
+  - Backboard
   layers:
   - Default
   - TransparentFX

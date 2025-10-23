@@ -129,7 +129,7 @@ public class ScoreScreenManager : MonoBehaviour
     public void OnRetryButtonClick()
     {
         Debug.Log("다시하기 버튼 클릭!");
-        SceneManager.LoadScene("scn_Welding");
+        SceneManager.LoadScene("welding_scene");
     }
 
     public void OnExitButtonClick()
