@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Merge_File/Scenes/menu_scene.unity
+    guid: 7ad4fef476be69148a83d8084be81b87
+  - enabled: 1
     path: Assets/Merge_File/Scenes/welding_scene.unity
     guid: 114b5755862cf7a4fa8fcd8470268b10
   - enabled: 1

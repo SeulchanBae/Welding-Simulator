@@ -43,12 +43,14 @@ public class GameManager : MonoBehaviour
         InitializeWeldingGuides();
     }
 
-    private void InitializeWeldingGuides()
+    // public으로 변경하여 외부에서 호출 가능하게 함 (프리팹 소환 후 호출용)
+    public void InitializeWeldingGuides()
     {
         // 씬에 있는 모든 WeldingGuideColorChanger 오브젝트를 찾아서 개수를 셉니다
         WeldingGuideColorChanger[] guides = FindObjectsOfType<WeldingGuideColorChanger>();
         totalGuideCount = guides.Length;
         weldedGuideCount = 0;
+        isGameFinished = false; // 게임 상태도 초기화
 
         Debug.Log($"용접 가이드 초기화 완료: 총 {totalGuideCount}개의 가이드 발견");
     }

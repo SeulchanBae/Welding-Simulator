@@ -4,34 +4,34 @@ using UnityEngine.EventSystems;
 
 public class ObjectScreenManager : MonoBehaviour
 {
-    [Header("UI ╧Жф╟╣И")]
+    [Header("UI О©╫О©╫ф╟О©╫О©╫")]
     public Button metalPlateButton;
     public Button metalstickButton;
     public Button cylinderButton;
     public Button startButton;
 
-    [Header("╩Щ╪╨╣и ©Ка╒ ╟╢ц╪ га╦╝фу")]
+    [Header("О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫ц╪ О©╫О©╫О©╫О©╫О©╫О©╫")]
     public GameObject metalPlatePrefab;
     public GameObject metalstickPrefab;
     public GameObject cylinderPrefab;
 
-    [Header("©Ка╒ ╣╣╠╦")]
-    [Tooltip("Start ╧Жф╟ е╛╦╞ ╫ц ╩Щ╪╨╣и ©Ка╒╠Б га╦╝фу")]
+    [Header("О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫")]
+    [Tooltip("Start О©╫О©╫ф╟ е╛О©╫О©╫ О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫")]
     public GameObject welderPrefab;
 
-    [Header("UI ©Д╪р")]
-    [Tooltip("Start ╧Жф╟ е╛╦╞ ╫ц ╩Г╤СаЖ╟т гр д╣╧Ж╫╨")]
+    [Header("UI О©╫О©╫О©╫")]
+    [Tooltip("Start О©╫О©╫ф╟ е╛О©╫О©╫ О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫ д╣О©╫О©╫О©╫О©╫")]
     public GameObject objectScreenCanvas;
 
-    [Header("╩Щ╪╨ ю╖д║")]
-    [Tooltip("га╦╝фуюл ╩Щ╪╨╣и ╠Баь ю╖д║")]
+    [Header("О©╫О©╫О©╫О©╫ О©╫О©╫д║")]
+    [Tooltip("О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫д║")]
     public Transform spawnPoint;
 
-    [Tooltip("©Ка╒ ╟╢ц╪(фг, ╨ю ╣Н)юг ╩Щ╪╨ ю╖д║ ©юга╪б")]
+    [Tooltip("О©╫О©╫О©╫О©╫ О©╫О©╫ц╪(О©╫О©╫, О©╫О©╫ О©╫О©╫)О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫д║ О©╫О©╫О©╫О©╫О©╫О©╫")]
     public Vector3 spawnOffset;
 
-    [Tooltip("©Ка╒ ╣╣╠╦╦╦юг ╨╟╣╣ ╩Щ╪╨ ю╖д║ ©юга╪б")]
-    public Vector3 welderSpawnOffset; // ©Ка╒╠Б ю╖д║╦╦ ╣Ш╥н а╤юЩго╠Б ю╖гя ╨╞╪Ж
+    [Tooltip("О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫д║ О©╫О©╫О©╫О©╫О©╫О©╫")]
+    public Vector3 welderSpawnOffset; // О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫д║О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫о╠О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫
 
     private GameObject currentWeldingObject;
 
@@ -39,56 +39,56 @@ public class ObjectScreenManager : MonoBehaviour
     {
         if (welderPrefab == null)
         {
-            Debug.LogWarning("[UIManager] 'welderPrefab'╟║ гр╢Г╣гаЖ ╬й╬р╫ю╢о╢ы. Start ╧Жф╟юл юш╣©гоаЖ ╬й╫ю╢о╢ы.");
+            Debug.LogWarning("[UIManager] 'welderPrefab'О©╫О©╫ О©╫р╢О©╫О©╫О©╫О©╫ О©╫й╬р╫О©╫О©╫о╢О©╫. Start О©╫О©╫ф╟О©╫О©╫ О©╫ш╣О©╫О©╫О©╫О©╫О©╫ О©╫й╫О©╫О©╫о╢О©╫.");
         }
 
         if (objectScreenCanvas == null)
         {
-            Debug.LogWarning("[UIManager] 'objectScreenCanvas'╟║ гр╢Г╣гаЖ ╬й╬р╫ю╢о╢ы. д╣╧Ж╫╨╦╕ ╪Ш╠Ф ╪Ж ╬Ь╫ю╢о╢ы.");
+            Debug.LogWarning("[UIManager] 'objectScreenCanvas'О©╫О©╫ О©╫р╢О©╫О©╫О©╫О©╫ О©╫й╬р╫О©╫О©╫о╢О©╫. д╣О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫ О©╫О©╫О©╫О©╫О©╫о╢О©╫.");
         }
 
         if (spawnPoint == null)
         {
-            Debug.LogError("[UIManager] 'spawnPoint'╟║ гр╢Г╣гаЖ ╬й╬р╫ю╢о╢ы. га╦╝фуюл ╩Щ╪╨╣гаЖ ╬й╫ю╢о╢ы!");
+            Debug.LogError("[UIManager] 'spawnPoint'О©╫О©╫ О©╫р╢О©╫О©╫О©╫О©╫ О©╫й╬р╫О©╫О©╫о╢О©╫. О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫й╫О©╫О©╫о╢О©╫!");
         }
 
         if (metalPlateButton != null)
         {
             metalPlateButton.onClick.AddListener(() => SpawnWeldingObject(metalPlatePrefab));
         }
-        else Debug.LogWarning("[UIManager] Metal Plate Buttonюл гр╢Г╣гаЖ ╬й╬р╫ю╢о╢ы.");
+        else Debug.LogWarning("[UIManager] Metal Plate ButtonО©╫О©╫ О©╫р╢О©╫О©╫О©╫О©╫ О©╫й╬р╫О©╫О©╫о╢О©╫.");
 
 
         if (metalstickButton != null)
         {
             metalstickButton.onClick.AddListener(() => SpawnWeldingObject(metalstickPrefab));
         }
-        else Debug.LogWarning("[UIManager] Metalstick Buttonюл гр╢Г╣гаЖ ╬й╬р╫ю╢о╢ы.");
+        else Debug.LogWarning("[UIManager] Metalstick ButtonО©╫О©╫ О©╫р╢О©╫О©╫О©╫О©╫ О©╫й╬р╫О©╫О©╫о╢О©╫.");
 
 
         if (cylinderButton != null)
         {
             cylinderButton.onClick.AddListener(() => SpawnWeldingObject(cylinderPrefab));
         }
-        else Debug.LogWarning("[UIManager] Cylinder Buttonюл гр╢Г╣гаЖ ╬й╬р╫ю╢о╢ы.");
+        else Debug.LogWarning("[UIManager] Cylinder ButtonО©╫О©╫ О©╫р╢О©╫О©╫О©╫О©╫ О©╫й╬р╫О©╫О©╫о╢О©╫.");
 
 
         if (startButton != null)
         {
             startButton.onClick.AddListener(OnStartClick);
         }
-        else Debug.LogWarning("[UIManager] Start Buttonюл гр╢Г╣гаЖ ╬й╬р╫ю╢о╢ы.");
+        else Debug.LogWarning("[UIManager] Start ButtonО©╫О©╫ О©╫р╢О©╫О©╫О©╫О©╫ О©╫й╬р╫О©╫О©╫о╢О©╫.");
 
-        Debug.Log("[UIManager] ╦П╣Г ╧Жф╟ ╦╝╫╨Ёй ╪Ёа╓юл ©о╥А╣г╬З╫ю╢о╢ы.");
+        Debug.Log("[UIManager] О©╫О©╫О©╫ О©╫О©╫ф╟ О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫ О©╫о╥О©╫г╬О©╫О©╫О©╫О©╫о╢О©╫.");
     }
 
     public void OnStartClick()
     {
-        Debug.Log("[UIManager] START ╧Жф╟ е╛╦╞! ©Ка╒ ╣╣╠╦╦╕ ╩Щ╪╨го╟М UI╦╕ ╪Ш╠И╢о╢ы.");
+        Debug.Log("[UIManager] START О©╫О©╫ф╟ е╛О©╫О©╫! О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫о╟О©╫ UIО©╫О©╫ О©╫О©╫О©╫О©╫о╢О©╫.");
 
         if (welderPrefab != null)
         {
-            // ©Ка╒╠Б ╩Щ╪╨ ю╖д║ = ╠Баьа║ + ©Ка╒╠Б юЭ©К ©юга╪б
+            // О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫д║ = О©╫О©╫О©╫О©╫О©╫О©╫ + О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫
             Vector3 welderPosition = spawnPoint.position + welderSpawnOffset;
             Instantiate(welderPrefab, welderPosition, spawnPoint.rotation);
         }
@@ -103,29 +103,36 @@ public class ObjectScreenManager : MonoBehaviour
     {
         if (prefabToSpawn == null)
         {
-            Debug.LogError("[UIManager] ╩Щ╪╨го╥а╢б га╦╝фуюл null ют╢о╢ы. Inspector ╪Ёа╓ю╩ х╝юнгьаж╪╪©Д.");
+            Debug.LogError("[UIManager] О©╫О©╫О©╫О©╫О©╫о╥О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ null О©╫т╢о╢О©╫. Inspector О©╫О©╫О©╫О©╫О©╫О©╫ х╝О©╫О©╫О©╫О©╫О©╫ж╪О©╫О©╫О©╫.");
             return;
         }
 
         if (spawnPoint == null)
         {
-            Debug.LogError("[UIManager] SpawnPoint╟║ гр╢Г╣гаЖ ╬й╬ф га╦╝фую╩ ╩Щ╪╨гр ╪Ж ╬Ь╫ю╢о╢ы.");
+            Debug.LogError("[UIManager] SpawnPointО©╫О©╫ О©╫р╢О©╫О©╫О©╫О©╫ О©╫й╬О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫ О©╫О©╫О©╫О©╫О©╫о╢О©╫.");
             return;
         }
 
         if (currentWeldingObject != null)
         {
-            Debug.Log($"[UIManager] юлюЭ ╟╢ц╪ '{currentWeldingObject.name}'╦╕ ╩Ха╕гу╢о╢ы.");
+            Debug.Log($"[UIManager] О©╫О©╫О©╫О©╫ О©╫О©╫ц╪ '{currentWeldingObject.name}'О©╫О©╫ О©╫О©╫О©╫О©╫О©╫у╢о╢О©╫.");
             Destroy(currentWeldingObject);
         }
 
-        // ©Ка╒ ╟╢ц╪ ╩Щ╪╨ ю╖д║ = ╠Баьа║ + юо╧щ ©юга╪б
+        // О©╫О©╫О©╫О©╫ О©╫О©╫ц╪ О©╫О©╫О©╫О©╫ О©╫О©╫д║ = О©╫О©╫О©╫О©╫О©╫О©╫ + О©╫о╧О©╫ О©╫О©╫О©╫О©╫О©╫О©╫
         Vector3 finalSpawnPosition = spawnPoint.position + spawnOffset;
 
-        Debug.Log($"[UIManager] '{prefabToSpawn.name}' га╦╝фую╩ ╩Щ╪╨гу╢о╢ы. ╠Баь ю╖д║: {spawnPoint.position}, ©юга╪б: {spawnOffset}, цжа╬ ю╖д║: {finalSpawnPosition}");
+        Debug.Log($"[UIManager] '{prefabToSpawn.name}' О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫у╢о╢О©╫. О©╫О©╫О©╫О©╫ О©╫О©╫д║: {spawnPoint.position}, О©╫О©╫О©╫О©╫О©╫О©╫: {spawnOffset}, О©╫О©╫О©╫О©╫ О©╫О©╫д║: {finalSpawnPosition}");
 
         currentWeldingObject = Instantiate(prefabToSpawn, finalSpawnPosition, spawnPoint.rotation);
 
         currentWeldingObject.name = prefabToSpawn.name;
+
+        // М■└К╕╛М▄╧ Л├▄М≥≤ М⌡└ GameManagerЛ≈░Й╡▄ Й╟─Л²╢К⌠° Й╟°Л┬≤К╔╪ К▀╓Л▀° Л└╦К▐└К║² Л∙▄К╕╪
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.InitializeWeldingGuides();
+            Debug.Log("[UIManager] М■└К╕╛М▄╧ Л├▄М≥≤ Л≥└Кё▄ М⌡└ GameManagerЛ≈░ Й╟─Л²╢К⌠° Л╢┬Й╦╟М≥■ Л ■Л╡╜");
+        }
     }
 }
