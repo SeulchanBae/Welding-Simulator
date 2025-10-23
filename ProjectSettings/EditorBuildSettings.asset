@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/NohJin/Scenes/scn_Welding 2.unity
+    path: Assets/Merge_File/Scenes/scn_Welding 2.unity
     guid: 114b5755862cf7a4fa8fcd8470268b10
   - enabled: 1
-    path: Assets/NohJin/Scenes/scn_result.unity
+    path: Assets/Merge_File/Scenes/scn_result.unity
     guid: 0d5cfb58aee7f3e4c8c45029a544e666
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bc2a96b959742d14190882c3554be01a,
