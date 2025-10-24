@@ -47,46 +47,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
-
-        // 패스스루 활성화 (welding_scene에서 검정 화면 방지)
-        EnablePassthrough();
-
-        // 시작 시간은 InitializeWeldingGuides()에서 설정하도록 변경
-    }
-
-    void EnablePassthrough()
-    {
-        // OVRManager 찾기
-        OVRManager ovrManager = FindObjectOfType<OVRManager>();
-        if (ovrManager != null)
-        {
-            Debug.Log("[GameManager] OVRManager 발견 - 패스스루 활성화 시도");
-        }
-        else
-        {
-            Debug.LogWarning("[GameManager] OVRManager를 찾을 수 없습니다.");
-        }
-
-        // OVRPassthroughLayer 찾기 및 활성화
-        OVRPassthroughLayer passthroughLayer = FindObjectOfType<OVRPassthroughLayer>();
-        if (passthroughLayer != null)
-        {
-            passthroughLayer.enabled = true;
-            Debug.Log("[GameManager] OVRPassthroughLayer 활성화 완료");
-        }
-        else
-        {
-            Debug.LogWarning("[GameManager] OVRPassthroughLayer를 찾을 수 없습니다. 씬에 패스스루 오브젝트가 없을 수 있습니다.");
-        }
-
-        // Camera의 Background를 SolidColor Black으로 설정 (패스스루용)
-        Camera mainCamera = Camera.main;
-        if (mainCamera != null)
-        {
-            mainCamera.clearFlags = CameraClearFlags.SolidColor;
-            mainCamera.backgroundColor = Color.black;
-            Debug.Log("[GameManager] 메인 카메라 배경을 검정색으로 설정 (패스스루용)");
-        }
     }
 
     // 프리팹 데이터 설정 (프리팹별 시간 제한 등)
@@ -134,9 +94,6 @@ public class GameManager : MonoBehaviour
     {
         if (scene.name == "welding_scene")
         {
-            // 용접 씬이 로드되면 패스스루만 활성화
-            // 가이드 초기화는 START 버튼을 눌렀을 때만!
-            EnablePassthrough();
             Debug.Log("[GameManager] 웰딩 씬 로드 완료. 프리팹을 선택하고 START 버튼을 누르세요!");
         }
         else if (scene.name == "result_scene")
@@ -160,7 +117,9 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("ScoreScreenManager를 찾았으므로 점수판을 표시합니다.");
             // 점수 설정과 화면 표시는 반드시 기다린 후에 호출합니다.
-            scoreScreenManager.SetScores(accuracyScore, proficiencyScore, depthScore, qualityScore);
+            float finalElapsedTime = Time.time - startTime;
+            scoreScreenManager.SetScores(accuracyScore, proficiencyScore, depthScore, qualityScore, finalElapsedTime,
+                                         wrongContactCount, backboardContactCount, perfectWeldCount, totalGuideCount, weldingTimeLimit);
             scoreScreenManager.ShowScoreScreen();
         }
         else

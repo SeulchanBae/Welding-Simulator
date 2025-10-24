@@ -27,3 +27,7 @@ Thumbs.db
 
 # Visual Studio Code
 .vscode/
+
+# Backup files
+*.backup
+*.backup.meta

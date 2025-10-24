@@ -13,6 +13,7 @@ public class ScoreScreenManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI proficiencyText;
     [SerializeField] private TextMeshProUGUI depthText;
     [SerializeField] private TextMeshProUGUI qualityText;
+    [SerializeField] private TextMeshProUGUI elapsedTimeText;
 
     [SerializeField] private Button retryButton;
     [SerializeField] private Button exitButton;
@@ -32,23 +33,30 @@ public class ScoreScreenManager : MonoBehaviour
     }
 
     // SetScores 함수 (int형 파라미터를 받던 버전)
-    public void SetScores(int accuracy, int proficiency, int depth, int quality)
+    public void SetScores(int accuracy, int proficiency, int depth, int quality, float elapsedTime,
+                          int wrongContactCount, int backboardContactCount, int perfectWeldCount, int totalGuideCount, float timeLimit)
     {
         if (accuracyText != null)
         {
-            accuracyText.text = $"accuracy : {accuracy}";
+            accuracyText.text = $"정확도 : {accuracy}점\n(잘못된 접촉 {wrongContactCount}회)";
         }
         if (proficiencyText != null)
         {
-            proficiencyText.text = $"proficiency : {proficiency}";
+            proficiencyText.text = $"숙련도 : {proficiency}점\n(제한시간 {timeLimit}초)";
         }
         if (depthText != null)
         {
-            depthText.text = $"depth : {depth}";
+            depthText.text = $"깊이 : {depth}점\n(백보드 접촉 {backboardContactCount}회)";
         }
         if (qualityText != null)
         {
-            qualityText.text = $"quality : {quality}";
+            qualityText.text = $"품질 : {quality}점\n(완벽한 용접 {perfectWeldCount}/{totalGuideCount}개)";
+        }
+        if (elapsedTimeText != null)
+        {
+            int minutes = (int)(elapsedTime / 60);
+            int seconds = (int)(elapsedTime % 60);
+            elapsedTimeText.text = $"소요 시간 : {minutes:00}:{seconds:00}";
         }
     }
 

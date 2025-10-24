@@ -9,6 +9,13 @@ public class WeldingSparkController : MonoBehaviour
     [Tooltip("스파크 파티클 크기 배율 (기본 1.0, 작을수록 작아짐)")]
     public float sparkSizeMultiplier = 0.15f;
 
+    [Header("용접 사운드 설정")]
+    [Tooltip("랜덤 재생할 용접 소리 목록 (5개 정도 추가하면 더 자연스러움)")]
+    public AudioClip[] weldingSoundClips;
+
+    [Tooltip("용접 소리 볼륨 (기본 1.0)")]
+    public float soundVolume = 2.0f;
+
     void Start()
     {
         // 스파크 크기 조정
@@ -27,14 +34,33 @@ public class WeldingSparkController : MonoBehaviour
             Debug.Log($"스파크 크기를 {sparkSizeMultiplier * 100}%로 조정했습니다.");
         }
 
-        // 오디오 소스도 반복 재생되도록 설정
+        // 오디오 소스는 랜덤 재생을 위해 loop를 false로 설정
         if (weldingAudioSource != null)
         {
-            weldingAudioSource.loop = true;
+            weldingAudioSource.loop = false;
         }
 
         // 용접봉이 프리팹을 뚫지 못하도록 Rigidbody 설정
         EnsureWeldingRodPhysics();
+    }
+
+    // 랜덤 용접 사운드 재생
+    void PlayRandomWeldingSound()
+    {
+        if (weldingAudioSource == null || weldingSoundClips == null || weldingSoundClips.Length == 0)
+            return;
+
+        // 랜덤으로 사운드 선택
+        int randomIndex = Random.Range(0, weldingSoundClips.Length);
+        AudioClip selectedClip = weldingSoundClips[randomIndex];
+
+        if (selectedClip != null)
+        {
+            weldingAudioSource.clip = selectedClip;
+            weldingAudioSource.volume = soundVolume;  // 볼륨 설정
+            weldingAudioSource.Play();
+            Debug.Log($"[WeldingSound] 랜덤 사운드 재생: {randomIndex + 1}/{weldingSoundClips.Length}");
+        }
     }
 
     void EnsureWeldingRodPhysics()
@@ -65,18 +91,18 @@ public class WeldingSparkController : MonoBehaviour
         if (other.CompareTag("WeldingGuide"))
         {
             WeldingGuideColorChanger guide = other.GetComponent<WeldingGuideColorChanger>();
-            if (guide != null && !guide.IsWelded)
+            if (guide != null)
             {
                 // 스파크 발생
                 weldingSparks.Play();
 
-                // 용접 소리 재생
-                if (weldingAudioSource != null && !weldingAudioSource.isPlaying)
+                // 랜덤 용접 소리 재생
+                if (!weldingAudioSource.isPlaying)
                 {
-                    weldingAudioSource.Play();
+                    PlayRandomWeldingSound();
                 }
 
-                // 용접 시작 (시간 측정 시작)
+                // 용접 시작 (접촉 카운트 증가)
                 guide.StartWelding();
             }
         }
@@ -86,10 +112,10 @@ public class WeldingSparkController : MonoBehaviour
             // 스파크 발생 및 게임 관리자에 알림 (감점)
             weldingSparks.Play();
 
-            // 용접 소리 재생
-            if (weldingAudioSource != null && !weldingAudioSource.isPlaying)
+            // 랜덤 용접 소리 재생
+            if (!weldingAudioSource.isPlaying)
             {
-                weldingAudioSource.Play();
+                PlayRandomWeldingSound();
             }
 
             GameManager.Instance.OnWrongContact();
@@ -100,13 +126,37 @@ public class WeldingSparkController : MonoBehaviour
             // 스파크 발생 및 깊이 점수 감점
             weldingSparks.Play();
 
-            // 용접 소리 재생
-            if (weldingAudioSource != null && !weldingAudioSource.isPlaying)
+            // 랜덤 용접 소리 재생
+            if (!weldingAudioSource.isPlaying)
             {
-                weldingAudioSource.Play();
+                PlayRandomWeldingSound();
             }
 
             GameManager.Instance.OnBackboardContact();
+        }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (GameManager.Instance == null)
+        {
+            return;
+        }
+
+        // 계속 접촉하고 있을 때 소리가 멈춘 경우 다시 재생
+        if (other.CompareTag("WeldingGuide") || other.CompareTag("MetalPlate") || other.CompareTag("Backboard"))
+        {
+            // 스파크가 멈춘 경우 다시 재생
+            if (weldingSparks != null && !weldingSparks.isPlaying)
+            {
+                weldingSparks.Play();
+            }
+
+            // 소리가 멈춘 경우 랜덤 소리 재생
+            if (weldingAudioSource != null && !weldingAudioSource.isPlaying)
+            {
+                PlayRandomWeldingSound();
+            }
         }
     }
 

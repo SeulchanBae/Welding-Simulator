@@ -322,7 +322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d68c74e24f895b942b3e040b0f45a3d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 0}
   maskOffset: {x: 0, y: -0.09, z: 0.15}
   detachButton: 1
 --- !u!1 &2088832458360693731
@@ -383,7 +382,7 @@ GameObject:
   - component: {fileID: 3481514679744072585}
   - component: {fileID: 6783210172569051536}
   - component: {fileID: 3617608509823790665}
-  - component: {fileID: 9876543210987654321}
+  - component: {fileID: 9223372036854775807}
   m_Layer: 0
   m_Name: Spark
   m_TagString: WeldingRod
@@ -5275,11 +5274,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 290ac0e1a3fa3d3409fe4a47481bc008, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   weldingSparks: {fileID: 7040629614723685432}
-  weldingAudioSource: {fileID: 9876543210987654321}
---- !u!82 &9876543210987654321
+  weldingAudioSource: {fileID: 9223372036854775807}
+  sparkSizeMultiplier: 0.5
+  weldingSoundClips:
+  - {fileID: 8300000, guid: 5d7c064053948d349bd69ce417768a59, type: 3}
+  - {fileID: 8300000, guid: edc0f2e662bf91544aac098709374d12, type: 3}
+  - {fileID: 8300000, guid: bc37f64c49b246b41a45177a816d1a79, type: 3}
+  - {fileID: 8300000, guid: 08403947baaca2146bd972a85e5af2c1, type: 3}
+  - {fileID: 8300000, guid: 69ee5a8f2c338c14ea3c8cf15122ea0a, type: 3}
+  soundVolume: 2
+--- !u!82 &9223372036854775807
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5289,11 +5296,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cb458677697447c49ba05af16050aa6c, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
